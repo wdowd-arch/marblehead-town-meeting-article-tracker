@@ -43,7 +43,7 @@
     background: var(--white);
     color: var(--black);
     padding: 24px 20px;
-    max-width: 960px;
+    max-width: 1080px;
     margin: 0 auto;
     -webkit-font-smoothing: antialiased;
     -webkit-text-size-adjust: 100%;
@@ -137,10 +137,10 @@
   .table-wrap { border: 1px solid var(--border); border-radius: 4px; overflow: visible; background: var(--bg-card); }
 
   .col-header {
-    display: grid; grid-template-columns: 50px 1fr 100px 80px 120px 110px;
-    padding: 8px 14px; background: var(--black);
-    font-size: 10px; font-weight: 700;
-    text-transform: uppercase; letter-spacing: 0.8px; color: #FFFFFF; gap: 6px;
+    display: grid; grid-template-columns: 56px 1fr 120px 100px 150px 130px;
+    padding: 12px 18px; background: var(--black);
+    font-size: 12px; font-weight: 700;
+    text-transform: uppercase; letter-spacing: 0.8px; color: #FFFFFF; gap: 16px;
     align-items: center;
     position: sticky; top: 0; z-index: 10;
   }
@@ -150,33 +150,34 @@
   .article-row.expanded { background: var(--bg-expanded); }
 
   .article-row-main {
-    display: grid; grid-template-columns: 50px 1fr 100px 80px 120px 110px;
-    align-items: center; padding: 11px 14px; gap: 6px;
+    display: grid; grid-template-columns: 56px 1fr 120px 100px 150px 130px;
+    align-items: center; padding: 16px 18px; gap: 16px;
   }
   .article-row-main.clickable { cursor: pointer; }
   .article-row-main.clickable:hover { background: var(--bg-card-hover); }
 
-  .art-num { font-size: 22px; font-weight: 700; text-align: center; line-height: 1; color: var(--black); }
+  .art-num { font-size: 26px; font-weight: 700; text-align: center; line-height: 1; color: var(--black); }
   .art-num.high { color: var(--red); }
-  .art-title { font-size: 15px; font-weight: 700; color: var(--black); line-height: 1.35; padding-left: 6px; }
-  .art-expand-hint { margin-left: 5px; font-size: 11px; color: var(--text-muted); font-weight: 400; }
-  .art-key { font-size: 12px; color: var(--text-secondary); margin-top: 2px; font-style: italic; padding-left: 6px; }
+  .art-title { font-size: 18px; font-weight: 700; color: var(--black); line-height: 1.4; padding-left: 4px; }
+  .art-expand-hint { margin-left: 5px; font-size: 13px; color: var(--text-muted); font-weight: 400; }
+  .art-key { font-size: 15px; color: var(--text-secondary); margin-top: 4px; font-style: italic; padding-left: 4px; line-height: 1.45; }
 
   .cat-cell { text-align: center; }
   .cat-badge {
-    display: inline-block; font-size: 10px; font-weight: 700;
-    padding: 3px 8px; border-radius: 3px; letter-spacing: 0.3px; text-transform: uppercase;
+    display: inline-block; font-size: 12px; font-weight: 700;
+    padding: 5px 10px; border-radius: 3px; letter-spacing: 0.3px; text-transform: uppercase;
     white-space: nowrap;
   }
 
-  .vote-cell { font-size: 11px; color: var(--text-secondary); text-align: center; }
+  .vote-cell-wrap, .rec-cell-wrap, .result-cell-wrap, .cat-cell { text-align: center; }
+  .vote-cell { font-size: 13px; color: var(--text-secondary); text-align: center; line-height: 1.3; }
   .vote-super { font-weight: 700; }
 
-  .rec-cell, .result-cell { font-size: 11px; text-align: center; }
+  .rec-cell, .result-cell { font-size: 13px; text-align: center; }
 
   .rec-badge, .result-badge {
-    display: inline-block; font-size: 10px; font-weight: 700;
-    padding: 3px 10px; border-radius: 3px; letter-spacing: 0.2px; text-transform: uppercase;
+    display: inline-block; font-size: 12px; font-weight: 700;
+    padding: 5px 12px; border-radius: 3px; letter-spacing: 0.2px; text-transform: uppercase;
     white-space: nowrap;
   }
   .rec-badge.favorable { background: #E8F5E9; color: #2E7D32; border: 1px solid #A5D6A7; }
@@ -366,9 +367,9 @@
     .masthead-title { font-size: 32px; }
 
     .col-header, .article-row-main {
-      grid-template-columns: 50px 1fr 100px 130px 100px;
-      gap: 6px;
-      padding-left: 12px; padding-right: 12px;
+      grid-template-columns: 56px 1fr 110px 150px 120px;
+      gap: 14px;
+      padding-left: 14px; padding-right: 14px;
     }
     /* Hide vote column on tablet to save space */
     .vote-cell-wrap { display: none; }
@@ -472,6 +473,11 @@
 <div style="margin-bottom:20px; padding:16px 18px; background:var(--bg-card); border:1px solid var(--border); border-radius:4px; font-family:var(--font); color:var(--black); line-height:1.7; font-size:14px;">
   <div style="font-size:16px; font-weight:700; margin-bottom:8px;">Open Town Meeting</div>
   Marblehead uses an open town meeting &mdash; the form of direct democracy the town has practiced since 1649. Any registered voter may attend, speak and vote; there are no elected representatives. Speakers must state their name and address and are limited to two minutes. Votes are taken by show of hands unless the moderator orders a counted vote, which is required when a supermajority is needed. A quorum of 300 registered voters is required. The 2026 Annual Town Meeting convenes May 4 at 7 p.m. at Veterans Memorial Middle School with 40 warrant articles. The $122.8 million fiscal 2027 budget arrives against a structural deficit that the Select Board is proposing to close through a three-tiered Proposition 2&frac12; override of $9 million, $12 million or $15 million &mdash; plus a separate ballot question on whether to fund curbside trash collection through the tax levy or household fees. Without an override, the town faces roughly 35 to 40 position cuts, severe reductions to the Abbot Public Library and continued pressure on schools and public safety.
+</div>
+
+<div style="margin-bottom:20px; padding:14px 16px; background:#FFF8E1; border:1px solid #FFE082; border-left:4px solid #C2261D; border-radius:4px; font-family:var(--font); color:var(--black); line-height:1.6; font-size:14px;">
+  <div style="font-size:11px; font-weight:700; letter-spacing:1.5px; text-transform:uppercase; color:#C2261D; margin-bottom:6px;">Last updated &middot; April 28, 2026</div>
+  <div>Updated to reflect FinCom&rsquo;s April 27 second warrant hearing. Net changes: <strong>Article 6</strong> re-voted favorable on revised $60,018.27 (late $36.98 school bill added). <strong>Article 9</strong> re-voted favorable on revised $510,682 (school bus lease adjustment, ~$13K decrease). <strong>Article 19</strong> moved to favorable &mdash; three-year fire contract finalized at 3% / 3% / 3.5%; FY27 already covered by 3% COLA, no separate appropriation. <strong>Article 21</strong> remains favorable (no new vote; informational discussion of the new vocational lottery and enrollment risk). <strong>Article 28</strong> remains pending &mdash; school portion folded into Article 29 in year one; awaiting School Committee action. <strong>Article 29</strong> moved to favorable &mdash; FinCom recommended the overall town-and-school operating override (excluding trash) and up to $4.3M in year-one appropriations; the curbside trash override component passed FinCom 7-2 favorable. <strong>Article 31</strong> moved to favorable &mdash; ~$12K cost mainly longevity, three personal days no cost. <strong>Article 39</strong> moved to unfavorable &mdash; FinCom voted against repealing the Department of Planning and Community Development. <strong>Article 40</strong> remains no-action &mdash; petitioners appeared but article has no financial impact. FinCom separately supported the chair signing the override MOU (not a warrant article).</div>
 </div>
 
 <div class="support-note-top">Support the reporting behind this tracker. 110 Marblehead neighbors already do — with a goal of 175 by July. <a href="https://www.marbleheadindependent.com/ways-to-support/" target="_blank" rel="noopener">Become a member</a>, and if you haven’t yet, <a href="https://4101x6.share-na2.hsforms.com/2KV5szI17TvKNFNUQHuLHHw" target="_blank" rel="noopener">sign up for our free weekly newsletter</a>.</div>
