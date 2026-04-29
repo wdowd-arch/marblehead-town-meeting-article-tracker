@@ -317,13 +317,13 @@
 
     .art-num { font-size: 20px; grid-row: 1 / 3; align-self: start; padding-top: 2px; }
     .art-title-wrap { grid-column: 2; }
-    .art-title { font-size: 14px; padding-left: 0; }
-    .art-key { font-size: 11px; padding-left: 0; }
+    .art-title { font-size: 14px; padding-left: 0; line-height: 1.35; }
+    .art-key { font-size: 11px; padding-left: 0; line-height: 1.4; margin-top: 2px; }
 
     /* Hide desktop-only grid columns */
     .cat-cell, .vote-cell-wrap, .rec-cell-wrap, .result-cell-wrap { display: none; }
 
-    /* Show mobile badge row */
+    /* Mobile badge row: compact, single line, larger fonts */
     .mobile-badges {
       display: flex;
       gap: 5px;
@@ -332,6 +332,9 @@
       grid-column: 2;
       margin-top: 6px;
     }
+    .mobile-badges .m-cell { display: contents; }
+    .mobile-badges .m-label { display: none; }
+    .mobile-badges .m-cell > div { display: none; }
     .mobile-badges .cat-badge { font-size: 9px; padding: 2px 6px; }
     .mobile-badges .vote-tag { font-size: 9px; color: var(--text-secondary); font-style: italic; }
     .mobile-badges .vote-tag.super { color: var(--blue); font-weight: 700; font-style: normal; }
@@ -727,10 +730,10 @@ function render() {
 
     // Mobile badge row (hidden on desktop, shown on mobile)
     h += '<div class="mobile-badges">';
-    h += '<span class="cat-badge" style="background:' + cs.bg + ';color:' + cs.text + ';border:1px solid ' + cs.border + '">' + esc(a.cat) + '</span>';
-    h += voteTag;
-    h += badgeHtml("rec", a.rec, a.recBy);
-    h += badgeHtml("result", a.result, a.resultDetail);
+    h += '<div class="m-cell"><span class="m-label">Category</span><span class="cat-badge" style="background:' + cs.bg + ';color:' + cs.text + ';border:1px solid ' + cs.border + '">' + esc(a.cat) + '</span></div>';
+    h += '<div class="m-cell"><span class="m-label">Vote required</span>' + voteTag + '</div>';
+    h += '<div class="m-cell"><span class="m-label">Recommendation</span>' + badgeHtml("rec", a.rec, a.recBy) + '</div>';
+    h += '<div class="m-cell"><span class="m-label">Town Meeting vote</span>' + badgeHtml("result", a.result, a.resultDetail) + '</div>';
     h += '</div>';
 
     h += '</div>'; // close row-main
