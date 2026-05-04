@@ -1,0 +1,102 @@
+ARTICLE 33: Prohibition of Cryptocurrency Automatic Teller Machines
+
+Quick facts
+- Category: Regulation
+- Sponsor: Select Board
+- Vote threshold: Majority
+- Key: $300/day/device fine
+- Stakes: medium
+- Recommendation: no-action (FinCom)
+- Result: tbd
+
+Journalist notes (tracker)
+- Would ban cryptocurrency ATM machines in Marblehead, joining a growing number of Massachusetts municipalities taking similar action. Sponsored by the police chief through the Select Board. Crypto ATMs have been linked to scams — particularly targeting seniors — where victims are told to deposit cash for fake ransoms or debts. There is believed to be one machine currently in town. Existing machines would have to be removed within 60 days; violations carry a $300/day/device fine. FinCom found no measurable financial impact and made no recommendation. FinCom member Eric Knight, a career law enforcement officer, spoke in strong personal support.
+
+Primary source (warrant text)
+ARTICLE 33: Amend General Bylaws Part I, Chapter 39 – Prohibition of Cryptocurrency 
+Automatic Teller Machines 
+To see if the Town will vote to amend the General Bylaws Part I to include a new Chapter 39, 
+Prohibition of Cryptocurrency Automatic Teller Machines as follows: 
+ 
+Chapter 39 
+Prohibition on Cryptocurrency Automated Teller Machines (ATMs) 
+ 
+§ 39-1 Purpose and Intent 
+The Town, acting upon reports of the Marblehead Police Department, finds that unregulated 
+cryptocurrency Automated Teller Machines (ATMs) pose risks to consumers, including financial 
+fraud, money laundering, and lack of recourse for users. Virtual currency ATMs are able to convert 
+currency into virtual currency instantaneously and irreversibly, which exposes the most 
+vulnerable of our citizens to unnecessary risk. The Town further finds that the current absence of 
+sufficient federal and state consumer protections and regulatory oversight for such devices 
+necessitates a municipal prohibition to safeguard residents and preserve public safety. The 
+purpose of this article is to prohibit the use of Cryptocurrency ATMs within the Town in an effort 
+to protect our citizens. 
+ 
+§ 39-2 Definitions 
+For purposes of this Bylaw, the following terms shall have the meanings indicated: 
+ 
+(a) 
+Cryptocurrency: A digital or virtual currency that uses cryptography for security and 
+operates independently of a central bank, including but not limited to Bitcoin, Bitcoin Cash, 
+Coinhub, Dash, LiteCoin, Ripple, ZCash, Ethereum, and similar blockchain-based tokens. 
+Cryptocurrency is a digital representation of value used as a medium of exchange, a unit of 
+account, or a store of value, but does not have legal tender status as recognized by the United 
+States Government. 
+ 
+(b) 
+Cryptocurrency Automated Teller Machine (Cryptocurrency ATM): Any self-service kiosk, 
+machine, or device installed in a publicly accessible location that enables users to buy, sell, 
+
+ 
+ 
+exchange, or transfer cryptocurrency through the machine using cash, debit card, credit card, or 
+other means of payment. 
+ 
+§ 39-3 Prohibition of Cryptocurrency Automated Teller Machines 
+No person, business, or entity shall install, operate, maintain, or allow the installation or operation 
+of a Cryptocurrency ATM within the geographic boundaries of the Town of Marblehead. All 
+Cryptocurrency ATMs existing in the Town of Marblehead as of the Effective Date of this Bylaw 
+must be removed within sixty (60) days after the Effective Date. 
+ 
+§ 39-4 Enforcement and Penalties 
+This Bylaw shall be enforced by the Marblehead Police Department, the Building Department or 
+any other authorized designated agent of the Town Administrator. 
+ 
+Any person or entity found to be in violation of this bylaw shall be subject to a fine of three 
+hundred dollars ($300.00) per day, per device, enforceable under the non-criminal disposition 
+pursuant to G.L. c. 40, § 21D. 
+ 
+Each day during which a violation continues shall constitute a separate offense. 
+ 
+§ 39-5 Severability 
+If any provision of this ordinance is held to be invalid by a court of competent jurisdiction, such 
+invalidity shall not affect the remaining provisions, which shall remain in full force and effect. 
+ 
+or to act in any other manner in relation thereto. Sponsored by the Select Board.
+
+FinCom report snippets mentioning this article
+---
+of issue. 
+ 
+Or take any action relative thereto. Sponsored by the Harbors and Waters Board. 
+ 
+Recommendation: That this article be adopted. 
+ 
+Comment: The last time Mooring Fees were increased was at the 2022 Town Meeting. Increased fees 
+will cover expense growth and future capital needs. 
+ 
+ARTICLE 33: Amend General Bylaws Part I, Chapter 39 – Prohibition of Cryptocurrency 
+Automatic Teller Machines 
+To see if the Town will vote to amend the General Bylaws Part I to include a new Chapter 39, 
+Prohibition of Cryptocurrency Automatic Teller Machines as follows: 
+ 
+Chapter 39 
+Prohibition on Cryptocurrency Automated Teller Machines (ATMs) 
+ 
+§ 39-1 Purpose and Intent 
+The Town, acting upon reports of the Marblehead Police Department, finds that unregulated 
+cryptocurrency Automated Teller Machines (ATMs) pose risks to consumers, including fin
+
+Assets
+- PDF: ./article-33.pdf
+- Images: ./article-33-p01.png (and more if multi-page)

@@ -55,6 +55,22 @@
 
   /* ── Masthead ── */
   .masthead-top-wrap { text-align: center; margin-bottom: 6px; }
+  .rotate-tip {
+    display: none;
+    margin: 0 0 14px;
+    padding: 10px 14px;
+    background: var(--blue-light);
+    border: 1px solid var(--blue-mid);
+    border-left: 4px solid var(--blue);
+    border-radius: 4px;
+    font-size: 13px;
+    font-style: italic;
+    color: var(--black);
+    text-align: center;
+  }
+  @media (max-width: 680px) and (orientation: portrait) {
+    .rotate-tip { display: block; }
+  }
   .countdown {
     margin: 10px auto 6px; display: inline-flex; gap: 10px; flex-wrap: wrap;
     justify-content: center; font-family: var(--font);
@@ -543,6 +559,8 @@
 <div class="donate-strip">
   Support the reporting behind tonight's coverage. The Marblehead Independent is free, independent and powered entirely by readers &mdash; 110 Marblehead neighbors already chip in, with a goal of 175 by July. <a href="https://www.marbleheadindependent.com/ways-to-support/" target="_blank" rel="noopener">Become a member</a> to keep local journalism going, and if you haven't yet, <a href="https://4101x6.share-na2.hsforms.com/2KV5szI17TvKNFNUQHuLHHw" target="_blank" rel="noopener">sign up for our free weekly newsletter</a>.
 </div>
+
+<div class="rotate-tip">For the best experience, turn your phone horizontal.</div>
 
 <div class="guide-return">
   <a href="https://wdowd-arch.github.io/marblehead-town-meeting-guide/" target="_blank" rel="noopener">Read the full Town Meeting Guide</a>

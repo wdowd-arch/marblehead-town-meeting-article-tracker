@@ -1,0 +1,116 @@
+ARTICLE 29: Tiered Operating Override
+
+Quick facts
+- Category: Override
+- Sponsor: Select Board / Finance Director
+- Vote threshold: Majority
+- Key: FY27 contingent appropriation up to $4.3M; trash override 7-2
+- Stakes: high
+- Recommendation: favorable (FinCom)
+- Result: tbd
+
+Journalist notes (tracker)
+- Article 29 is the main town-side override article and the central vehicle for the new three-tier, three-year operating override structure. The Select Board decided to anchor the override package here rather than treat it as just another supplemental line item. The article is expected to contain the contingent FY27 appropriation of roughly $4.3M, representing year one of the highest tier (Tier 3), while the June 9 ballot would ask voters to choose among the broader $9M, $12M and $15M cumulative override frameworks. In other words, Article 29 supplies the legal authority for the FY27 town-side piece and explains how later-year draws would fit into the pyramid structure if voters approve a tier. Officials said the exact legal text and detailed breakdown were still being refined with town counsel as of the April 22 meeting so the Town Meeting vote, ballot questions and multi-year draw schedule stay aligned. That refinement is still pending, but the policy decision to anchor the overrides in Article 29 has already been made. If the override fails at the ballot, this article is void.
+- 
+- At the April 27 hearing, FinCom voted to recommend the overall town-and-school operating override (excluding the trash override) and to appropriate up to $4.3 million in year one as summarized for Town Meeting. FinCom took a separate vote on the curbside collection/trash override component, which passed 7-2. Mark the trash component as favorable, 7-2.
+
+Primary source (warrant text)
+ARTICLE 29: Supplemental Appropriation and Expenses of Several Departments 
+To see if the Town will vote to raise and appropriate or transfer from available funds a sum of 
+money to supplement the Town’s General Government operating budget beginning in FY2027, 
+contingent upon the passage of a Proposition 2½, so called, ballot question, or take any action 
+relative thereto. Sponsored by the Finance Director.
+
+FinCom report snippets mentioning this article
+---
+sted available revenue and expenses while ensuring the cost 
+accountability framework described above was applied. 
+ 
+We believe that an override is necessary at this time to maintain the level of services residents receive 
+today. The Finance Committee voted unanimously to recommend the passing of Article 29, which would 
+move the override request to the ballot to be voted on by residents at the June election/vote. 
+ 
+On April 10, 2026, S&P Global affirmed Marblehead’s AAA rating; however, the outlook was revised 
+from ‘stable’ to ‘negative’ due to budgetary stress. At the start of FY27, the Town's reserve accounts will 
+constitute approximately 2% of the operating budget. Town officials remain committed to the objective of 
+building reserves to 5% of the operating budget moving forward. It is crucial for the Town to sustain a 
+sufficient level of
+---
+f a Proposition 2 ½, so called, ballot question, or take any action relative 
+thereto. Sponsored by the School Committee. 
+ 
+Recommendation: No recommendation under this article. 
+ 
+Comment: As of the date of the printing of this report, this article is not being brought forward by the 
+sponsor. 
+ 
+ARTICLE 29: Supplemental Appropriation and Expenses of Several Departments 
+To see if the Town will vote to raise and appropriate or transfer from available funds a sum of 
+money to supplement the Town’s General Government operating budget beginning in FY2027, 
+contingent upon the passage of a Proposition 2½, so called, ballot question, or take any action 
+relative thereto. Sponsored by the Finance Director. 
+ 
+Recommendation: That the Town raise and appropriate up to $4,296,718 for FY27 contingent upon 
+the passage of a proposition 2 ½ Override:
+---
+or take any action 
+relative thereto. Sponsored by the Finance Director. 
+ 
+Recommendation: That the Town raise and appropriate up to $4,296,718 for FY27 contingent upon 
+the passage of a proposition 2 ½ Override: 
+ 
+ 
+ 
+Comment: The Finance Committee voted unanimously to recommend the passing of Article 29, which 
+would move the override request to the ballot to be voted on by residents at the June election/vote. 
+ 
+ 
+ 
+FY27
+FY27
+FY27
+BUDGET CATEGORY
+Tier 1
+Tier 2
+Tier 3
+GENERAL GOVERNMENT / OTHER GENERAL GOVERNMENT
+457,942
+ 
+1,032,374
+ 
+2,102,374
+ 
+PUBLIC SAFETY
+119,982
+ 
+333,464
+ 
+546,946
+ 
+PUBLIC WORKS AND FACILITIES
+259,286
+ 
+329,286
+ 
+477,286
+ 
+HUMAN SERVICES
+76,171
+ 
+136,171
+ 
+196,171
+ 
+CULTURE AND RECREATION
+356,183
+ 
+973,941
+ 
+973,941
+ 
+TOTAL
+1,269,56
+
+Assets
+- PDF: ./article-29.pdf
+- Images: ./article-29-p01.png (and more if multi-page)

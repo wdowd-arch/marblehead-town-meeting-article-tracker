@@ -1,0 +1,60 @@
+ARTICLE 6: Unpaid accounts
+
+Quick facts
+- Category: Finance
+- Sponsor: Finance Director
+- Vote threshold: Nine-tenths
+- Key: $60,018.27 from available funds
+- Stakes: low
+- Recommendation: favorable (FinCom)
+- Result: tbd
+
+Journalist notes (tracker)
+- Every year, some bills arrive after the town closes its books on June 30. Because Massachusetts law does not let municipalities pay prior-year invoices from the current budget, Town Meeting must appropriate the money separately — at a nine-tenths supermajority. This year’s batch covers seven departments, including Public Buildings, Rec & Park, Fire, Schools, the Assessor, Town Clerk and the Library.
+- 
+- A new purchase order system is expected to minimize future unpaid accounts. Historically the total has been higher than $60K.
+- 
+- At its April 27 hearing, FinCom re-voted the article after a late $36.98 school bill was added, with the updated appropriation reflected as $60,018.27. FinCom voted favorable on the revised number.
+
+Primary source (warrant text)
+ARTICLE 6: Unpaid Accounts 
+To see if the Town will vote to appropriate or transfer from available funds a sum of money to 
+provide for the payment of any unpaid accounts brought forward from previous years, or take 
+any other action relative thereto. Sponsored by the Finance Director.
+
+FinCom report snippets mentioning this article
+---
+leased or rented as such. For the purpose of this, the Accessory Dwelling 
+Unit Bylaw, a short-term rental shall be anything leased for fewer than 90 31 days. 
+ 
+Or take any other action relative thereto. Sponsored by the Planning Board. 
+ 
+Recommendation: No recommendation under this article. 
+ 
+ARTICLE 6: Unpaid Accounts 
+To see if the Town will vote to appropriate or transfer from available funds a sum of money to 
+provide for the payment of any unpaid accounts brought forward from previous years, or take 
+any other action relative thereto. Sponsored by the Finance Director. 
+ 
+Recommendation: That the sum of $60,182.27 be appropriated as follows: 
+ 
+ 
+Department
+Amount
+School
+ 3,499.27 
+Assessor
+ 1,435.00 
+Town Clerk
+ 495.00 
+Fire
+ 6,398.08 
+Rec & Park
+ 16,511.44 
+Public Buildings
+ 31,761.52 
+Library
+
+Assets
+- PDF: ./article-06.pdf
+- Images: ./article-06-p01.png (and more if multi-page)
