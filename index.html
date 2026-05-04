@@ -55,6 +55,9 @@
 
   /* ── Masthead ── */
   .masthead-top-wrap { text-align: center; margin-bottom: 6px; }
+  .masthead-logo-link { display: inline-block; margin: 8px 0 14px; }
+  .masthead-logo { display: block; width: 100%; max-width: 520px; height: auto; }
+  @media (max-width: 680px) { .masthead-logo { max-width: 320px; } }
   .masthead-kicker { font-size: 13px; font-weight: 700; letter-spacing: 3px; text-transform: uppercase; color: var(--red); margin-bottom: 6px; }
   .masthead-title { font-size: 38px; font-weight: 700; color: var(--black); line-height: 1.15; letter-spacing: -0.5px; }
   .masthead-date { font-size: 14px; color: var(--text-secondary); margin-top: 8px; font-style: italic; }
@@ -447,6 +450,68 @@
   /* ══════════════════════════════════════════════
      PRINT
      ══════════════════════════════════════════════ */
+  /* ── Live feed (Winchester-style) ── */
+  @keyframes livepulse {
+    0%   { box-shadow: 0 0 0 0 rgba(194,38,29,.55); }
+    70%  { box-shadow: 0 0 0 10px rgba(194,38,29,0); }
+    100% { box-shadow: 0 0 0 0 rgba(194,38,29,0); }
+  }
+  .donate-strip {
+    margin: 0 0 20px;
+    padding: 14px 16px;
+    background: var(--bg-card-hover);
+    border: 1px solid var(--border);
+    border-left: 4px solid var(--red);
+    font-size: 14px;
+    line-height: 1.6;
+    color: var(--text-secondary);
+    border-radius: 4px;
+  }
+  .donate-strip a { color: var(--red); font-weight: 700; text-decoration: underline; }
+  .live-block { margin: 0 0 20px; }
+  .live-head {
+    font-size: 10px; font-weight: 700; letter-spacing: 1.5px;
+    text-transform: uppercase; color: var(--red);
+    margin-bottom: 12px;
+    display: flex; align-items: center; gap: 8px; flex-wrap: wrap;
+  }
+  .live-dot {
+    display: inline-block; width: 8px; height: 8px; border-radius: 50%;
+    background: var(--red); animation: livepulse 1.4s ease-in-out infinite;
+  }
+  .live-jump {
+    margin-left: auto;
+    background: var(--red); color: #fff;
+    padding: 6px 12px; border-radius: 4px; text-decoration: none;
+    letter-spacing: 0; text-transform: none;
+    font-size: 13px; font-weight: 700;
+  }
+  .live-feed {
+    border-left: 2px solid var(--border);
+    padding-left: 16px;
+    display: flex; flex-direction: column; gap: 16px;
+  }
+  .live-entry .live-time {
+    font-size: 10px; font-weight: 700; color: var(--text-muted);
+    text-transform: uppercase; letter-spacing: 1px; margin-bottom: 4px;
+  }
+  .live-entry .live-headline {
+    font-size: 20px; font-weight: 700; color: var(--black);
+    margin-bottom: 6px; line-height: 1.3;
+  }
+  .live-entry .live-body {
+    font-size: 18px; color: var(--text-secondary); line-height: 1.7;
+  }
+  .live-empty {
+    font-style: italic; color: var(--text-muted); font-size: 16px;
+    padding: 8px 0;
+  }
+  @media (max-width: 680px) {
+    .live-entry .live-headline { font-size: 17px; }
+    .live-entry .live-body { font-size: 16px; }
+    .live-jump { width: 100%; text-align: center; margin-left: 0; }
+  }
+
   @media print {
     body { background: #fff; padding: 0; }
     .filters, .legend { display: none; }
@@ -462,29 +527,37 @@
 </div>
 <div class="masthead-top-wrap">
   <div class="masthead-kicker">Town of Marblehead</div>
+  <a href="https://www.marbleheadindependent.com" target="_blank" rel="noopener" class="masthead-logo-link">
+    <img src="assets/nameplate-horizontal.png" alt="The Marblehead Independent" class="masthead-logo" />
+  </a>
   <div class="masthead-title">2026 Annual<br>Town Meeting Warrant</div>
   <div class="masthead-date">Monday, May 4 &middot; 7 p.m. &middot; Marblehead High School Field House, 2 Humphrey St.</div>
 </div>
-<div class="masthead-rule"></div>
 <div class="masthead-byline">BY WILL DOWD</div>
+
+<div class="donate-strip">
+  Support the reporting behind tonight's coverage. The Marblehead Independent is free, independent and powered entirely by readers &mdash; 110 Marblehead neighbors already chip in, with a goal of 175 by July. <a href="https://www.marbleheadindependent.com/ways-to-support/" target="_blank" rel="noopener">Become a member</a> to keep local journalism going, and if you haven't yet, <a href="https://4101x6.share-na2.hsforms.com/2KV5szI17TvKNFNUQHuLHHw" target="_blank" rel="noopener">sign up for our free weekly newsletter</a>.
+</div>
+
+<div class="masthead-rule"></div>
 <div class="header" style="border-bottom: 2px solid var(--black); padding-bottom: 14px; margin-bottom: 20px;">
-  <div class="header-kicker">Interactive tracker</div>
-  <h1>All 40 warrant articles, explained</h1>
-  <p class="header-sub">Tap any highlighted article to expand for details, sponsors and stakes</p>
+  <div class="header-kicker">Tonight &middot; Live coverage</div>
+  <h1>Marblehead Town Meeting convenes Monday, May 4</h1>
+  <p class="header-sub">Voters take the floor at 7 p.m. at the Marblehead High School Field House to work through 40 warrant articles &mdash; among them the 3A multi-family overlay, the FY27 budget and a tiered Proposition 2&frac12; override package. Follow the live feed below for updates as the night unfolds, then scroll to the tracker for the status of all 40 articles.</p>
 </div>
 
-<div style="margin-bottom:20px; padding:16px 18px; background:var(--bg-card); border:1px solid var(--border); border-radius:4px; font-family:var(--font); color:var(--black); line-height:1.7; font-size:14px;">
-  <div style="font-size:16px; font-weight:700; margin-bottom:8px;">Open Town Meeting</div>
-  Marblehead uses an open town meeting &mdash; the form of direct democracy the town has practiced since 1649. Any registered voter may attend, speak and vote; there are no elected representatives. Speakers must state their name and address and are limited to two minutes. Votes are taken by show of hands unless the moderator orders a counted vote, which is required when a supermajority is needed. A quorum of 300 registered voters is required. The 2026 Annual Town Meeting convenes May 4 at 7 p.m. at Veterans Memorial Middle School with 40 warrant articles. The $122.8 million fiscal 2027 budget arrives against a structural deficit that the Select Board is proposing to close through a three-tiered Proposition 2&frac12; override of $9 million, $12 million or $15 million &mdash; plus a separate ballot question on whether to fund curbside trash collection through the tax levy or household fees. Without an override, the town faces roughly 35 to 40 position cuts, severe reductions to the Abbot Public Library and continued pressure on schools and public safety.
+<div class="live-block">
+  <div class="live-head">
+    <span class="live-dot" aria-hidden="true"></span>
+    Live updates &middot; Annual Town Meeting opens Monday, May 4
+    <a href="#articleTracker" class="live-jump">Jump to article tracker &darr;</a>
+  </div>
+  <div class="live-feed" id="liveFeed">
+    <div class="live-empty">Live updates will appear here once gavel-in. Refresh this page for the latest.</div>
+  </div>
 </div>
 
-<div style="margin-bottom:20px; padding:14px 16px; background:#FFF8E1; border:1px solid #FFE082; border-left:4px solid #C2261D; border-radius:4px; font-family:var(--font); color:var(--black); line-height:1.6; font-size:14px;">
-  <div style="font-size:11px; font-weight:700; letter-spacing:1.5px; text-transform:uppercase; color:#C2261D; margin-bottom:6px;">Last updated &middot; April 28, 2026</div>
-  <div>Updated to reflect FinCom&rsquo;s April 27 second warrant hearing. Net changes: <strong>Article 6</strong> re-voted favorable on revised $60,018.27 (late $36.98 school bill added). <strong>Article 9</strong> re-voted favorable on revised $510,682 (school bus lease adjustment, ~$13K decrease). <strong>Article 19</strong> moved to favorable &mdash; three-year fire contract finalized at 3% / 3% / 3.5%; FY27 already covered by 3% COLA, no separate appropriation. <strong>Article 21</strong> remains favorable (no new vote; informational discussion of the new vocational lottery and enrollment risk). <strong>Article 28</strong> remains pending &mdash; school portion folded into Article 29 in year one; awaiting School Committee action. <strong>Article 29</strong> moved to favorable &mdash; FinCom recommended the overall town-and-school operating override (excluding trash) and up to $4.3M in year-one appropriations; the curbside trash override component passed FinCom 7-2 favorable. <strong>Article 31</strong> moved to favorable &mdash; ~$12K cost mainly longevity, three personal days no cost. <strong>Article 39</strong> moved to unfavorable &mdash; FinCom voted against repealing the Department of Planning and Community Development. <strong>Article 40</strong> remains no-action &mdash; petitioners appeared but article has no financial impact. FinCom separately supported the chair signing the override MOU (not a warrant article).</div>
-</div>
-
-<div class="support-note-top">Support the reporting behind this tracker. 110 Marblehead neighbors already do — with a goal of 175 by July. <a href="https://www.marbleheadindependent.com/ways-to-support/" target="_blank" rel="noopener">Become a member</a>, and if you haven’t yet, <a href="https://4101x6.share-na2.hsforms.com/2KV5szI17TvKNFNUQHuLHHw" target="_blank" rel="noopener">sign up for our free weekly newsletter</a>.</div>
-
+<div id="articleTracker"></div>
 <div class="stats" id="stats"></div>
 
 <div class="key-callout">
