@@ -1,0 +1,91 @@
+      var doc = frame.contentWindow.document;
+      var height = Math.max(
+        doc.documentElement.scrollHeight,
+        doc.body ? doc.body.scrollHeight : 0
+      );
+      if (height) {
+        frame.style.height = height + 'px';
+      }
+    } catch (err) {
+      // Same-origin embeds should resize; ignore if not ready yet.
+    }
+  }
+
+  window.addEventListener('load', function() {
+    document.querySelectorAll('.embed-frame').forEach(function(frame) {
+      resizeEmbeddedFrame(frame);
+    });
+  });
+
+  window.addEventListener('resize', function() {
+    document.querySelectorAll('.embed-frame').forEach(function(frame) {
+      resizeEmbeddedFrame(frame);
+    });
+  });
+  </script>
+
+  <script>
+  /* Health insurance chart */
+  (function() {
+  
+const labels = ["FY02","FY03","FY04","FY05","FY06","FY07","FY08","FY09","FY10","FY11","FY12","FY13","FY14","FY15","FY16","FY17","FY18","FY19","FY20","FY21","FY22","FY23","FY24","FY25","FY26","FY27*"];
+
+const spending = [9.1, 12.0, 14.5, 16.2, 18.0, 11.8, 10.5, 9.4, 9.2, 9.4, 9.5, 9.6, 9.8, 10.0, 10.1, 10.2, 10.3, 10.5, 10.7, 11.0, 11.5, 11.8, 12.2, 12.3, 13.7, 15.8];
+
+const share = [17.0, 22.0, 26.0, 29.0, 33.4, 21.0, 18.0, 16.1, 14.5, 14.2, 13.8, 13.5, 13.3, 13.1, 13.0, 12.9, 12.7, 12.6, 12.4, 12.5, 12.8, 13.0, 13.3, 13.5, 14.1, 14.1];
+
+const eraBoundaries = [
+  { start: 0, end: 4, color: "rgba(252,228,228,0.45)" },
+  { start: 5, end: 7, color: "rgba(220,240,224,0.45)" },
+  { start: 8, end: 17, color: "rgba(221,230,240,0.45)" },
+  { start: 18, end: 25, color: "rgba(245,237,222,0.45)" },
+];
+
+const bgPlugin = {
+  id: "shellWhiteBg",
+  beforeDraw(chart) {
+    const { ctx, width, height } = chart;
+    ctx.save();
+    ctx.fillStyle = "#FDF9F4";
+    ctx.fillRect(0, 0, width, height);
+    ctx.restore();
+  }
+};
+
+const eraPlugin = {
+  id: "eraBackground",
+  beforeDraw(chart) {
+    const { ctx, chartArea, scales } = chart;
+    if (!chartArea) return;
+    eraBoundaries.forEach(era => {
+      const x1 = scales.x.getPixelForValue(era.start);
+      const x2 = scales.x.getPixelForValue(era.end);
+      ctx.fillStyle = era.color;
+      ctx.fillRect(x1, chartArea.top, x2 - x1, chartArea.bottom - chartArea.top);
+    });
+  }
+};
+
+const annotationPlugin = {
+  id: "annotations",
+  afterDraw(chart) {
+    const { ctx, chartArea, scales } = chart;
+    if (!chartArea) return;
+    ctx.save();
+
+    const peakX = scales.x.getPixelForValue(4);
+    const peakY = scales.y.getPixelForValue(18.0);
+    ctx.fillStyle = "#c0392b";
+    ctx.font = "bold 11px Georgia, serif";
+    ctx.textAlign = "center";
+    ctx.fillText("$18M peak", peakX, peakY - 14);
+
+    const gicX = scales.x.getPixelForValue(5);
+    const gicY = scales.y.getPixelForValue(11.8);
+    ctx.fillStyle = "#27785a";
+    ctx.font = "bold 10px Georgia, serif";
+    ctx.fillText("GIC", gicX, gicY - 12);
+
+    const fy27X = scales.x.getPixelForValue(25);
+    const fy27Y = scales.y.getPixelForValue(15.8);
+    ctx.fillStyle = "#c0392b";

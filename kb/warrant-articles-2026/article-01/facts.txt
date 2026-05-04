@@ -1,0 +1,61 @@
+ARTICLE 1: Order of business
+
+Quick facts
+- Category: Procedural
+- Sponsor: Select Board
+- Vote threshold: Majority
+- Key: Numerical order
+- Stakes: low
+- Recommendation: no-action (FinCom)
+- Result: tbd
+
+Journalist notes (tracker)
+- Standard procedural vote taken at the start of every Town Meeting. Requires voters to take the 40 warrant articles in numerical order rather than skipping around. FinCom made no recommendation; no financial implications.
+
+Primary source (warrant text)
+ARTICLE 1: Articles in Numerical Order 
+To see if the Town will vote to adopt an order requiring articles in the Warrant to be taken up in 
+their numerical order, or take any other action relative thereto. Sponsored by the Select Board.
+
+FinCom report snippets mentioning this article
+---
+Respectfully Submitted, 
+ 
+MARBLEHEAD FINANCE COMMITTEE 
+ 
+Alec Goolsby, Chair 
+Molly Teets, Vice Chair 
+Pat Franklin, Vice Chair 
+ 
+Timothy Shotmeyer 
+Lindsay Dube 
+Michael Janko 
+Michael O’Neil 
+Ramon Garcia 
+Eric Knight 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ARTICLE 1: Articles in Numerical Order 
+To see if the Town will vote to adopt an order requiring articles in the Warrant to be taken up in 
+their numerical order, or take any other action relative thereto. Sponsored by the Select Board. 
+ 
+Recommendation: No recommendation under this article. 
+ 
+ARTICLE 2: Reports of Town Officers and Committees 
+To receive the report of the Town Accountant, the reports of the Town Officers, and special 
+committees, or take any other action relative thereto. Sponsored by the Select Board. 
+ 
+Recommendation: No recomme
+
+Assets
+- PDF: ./article-01.pdf
+- Images: ./article-01-p01.png (and more if multi-page)

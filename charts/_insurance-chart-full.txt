@@ -1,0 +1,116 @@
+    ctx.fillStyle = "#c0392b";
+    ctx.font = "bold 12px Georgia, serif";
+    ctx.textAlign = "right";
+    ctx.fillText("$15.8M", fy27X + 4, fy27Y - 12);
+
+    const fy02X = scales.x.getPixelForValue(0);
+    const fy02Y = scales.y.getPixelForValue(9.1);
+    ctx.fillStyle = "#9ca3af";
+    ctx.font = "11px Georgia, serif";
+    ctx.textAlign = "left";
+    ctx.fillText("$9.1M", fy02X + 6, fy02Y - 10);
+
+    ctx.restore();
+  }
+};
+
+const ctx = document.getElementById("insuranceChart").getContext("2d");
+new Chart(ctx, {
+  type: "line",
+  data: {
+    labels,
+    datasets: [{
+      label: "Spending ($M)",
+      data: spending,
+      borderColor: "#c0392b",
+      backgroundColor: "rgba(192,57,43,0.08)",
+      borderWidth: 2.5,
+      fill: true,
+      tension: 0.25,
+      pointRadius: function(context) {
+        const i = context.dataIndex;
+        if (i === 0 || i === 4 || i === 5 || i === 8 || i === 23 || i === 25) return 5;
+        return 2.5;
+      },
+      pointBackgroundColor: function(context) {
+        if (context.dataIndex === 5) return "#FFFFFF";
+        return "#c0392b";
+      },
+      pointBorderColor: function(context) {
+        if (context.dataIndex === 5) return "#27785a";
+        return "#FDF9F4";
+      },
+      pointBorderWidth: function(context) {
+        if (context.dataIndex === 5) return 2.5;
+        return 1.5;
+      },
+      pointHoverRadius: 7,
+    }]
+  },
+  options: {
+    responsive: true,
+    maintainAspectRatio: false,
+    scales: {
+      y: {
+        beginAtZero: true,
+        max: 20,
+        ticks: {
+          callback: v => `$${v}M`,
+          font: { family: "Georgia, serif", size: 12 },
+          color: "#9ca3af",
+          stepSize: 5,
+        },
+        grid: { color: "#e5e7eb", drawBorder: false },
+        border: { color: "#1a1a2e" },
+      },
+      x: {
+        ticks: {
+          font: { family: "Georgia, serif", size: 11 },
+          color: "#9ca3af",
+          maxRotation: 45,
+          autoSkip: true,
+          maxTicksLimit: 14,
+        },
+        grid: { display: false },
+        border: { color: "#1a1a2e" },
+      }
+    },
+    plugins: {
+      legend: { display: false },
+      tooltip: {
+        titleFont: { family: "Georgia, serif", size: 14, weight: "bold" },
+        bodyFont: { family: "Georgia, serif", size: 13 },
+        backgroundColor: "#FDF9F4",
+        titleColor: "#1a1a2e",
+        bodyColor: "#4A4A4A",
+        borderColor: "#D0CCC5",
+        borderWidth: 1,
+        displayColors: false,
+        callbacks: {
+          label: (ctx) => `Spending: $${ctx.parsed.y.toFixed(1)}M`,
+          afterLabel: (ctx) => `Share of general fund: ~${share[ctx.dataIndex]}%`
+        }
+      }
+    },
+    interaction: {
+      mode: "index",
+      intersect: false,
+    },
+  },
+  plugins: [bgPlugin, eraPlugin, annotationPlugin],
+});
+
+  })();
+  </script>
+
+  <script>
+  /* Budget breakdown chart */
+  (function() {
+  
+const segments = [
+  { name: "Schools", value: 47.62, color: "#1E1F21", detail: "$47.62M &middot; 43% of general fund; ~63% of functional spending once shared benefits are allocated" },
+  { name: "Health insurance", value: 15.83, color: "#C2261D", detail: "$15.83M &middot; 11.17% GIC rate hike for active employees; 5.1% for retirees" },
+  { name: "Pension", value: 8.2, color: "#B85C1F", detail: "~$8.2M &middot; Rising 8.6% annually; will not level off until 2036" },
+  { name: "Debt service", value: 11.1, color: "#6B7280", detail: "$11.1M &middot; Includes school construction bonds" },
+  { name: "Town departments", value: 21.92, color: "#375E97", detail: "~$21.9M &middot; Town-side operating (police, fire, DPW, library, etc.) after cuts" },
+  { name: "Curbside collection", value: 2.19, color: "#3D7A47", detail: "$2.19M &middot; New line item; Republic Services contract" },

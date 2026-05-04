@@ -1,0 +1,17 @@
+Source: https://www.marbleheadindependent.com/news-analysis-marbleheads-override-questions-will-test-two-theories-of-how-voters-say-yes/
+Published: April 7, 2026 (News analysis)
+
+Why this matters to Article 23
+- The analysis frames the FY27 budget gap as ~$7.7M and describes a two-question June ballot strategy (assuming Town Meeting authorizes ballot questions first).
+- It states the town carved out the curbside trash funding piece (~$2.2M, ~29% of the shortfall) into a standalone yes/no question that resembles the “specific object” logic of debt exclusions.
+- It treats the remaining ~$5.5M as a separate multi-tier “service override” structure (cumulative tiers) rather than a single itemized question.
+
+Key context bullets (for live coverage)
+- The Board of Health is described as moving to implement a curbside trash fee of about ~$262/household to cover new collection contracts, shifting ~$2.2M off the general fund; the override question would fund the service through the levy instead (replacing the fee).
+- Historical context cited in the piece: since 1982, voters approved 68 of 84 debt exclusions (81%) but only 3 of 21 operating overrides (86% failure rate); last permanent general operating increase cited as June 15, 2005.
+- Tiered override concept summarized: Tier 1 “restore” (restore cuts), Tier 2 “stabilize and build”, Tier 3 “invest and improve”; voters mark tiers yes/no and the highest tier to clear a majority sets the permanent levy increase.
+
+How to use this in Article 23 writeups
+- Use it as narrative framing: Article 23 is the no-override baseline budget that becomes the reference point for the override/trash strategy described.
+- Pull the stated figures (~$7.7M gap, ~$2.2M trash component, ~$262/household fee figure) as context for why the budget article is being debated the way it is.
+

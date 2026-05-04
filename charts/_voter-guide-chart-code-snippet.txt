@@ -1,0 +1,221 @@
+    const fy02X = scales.x.getPixelForValue(0);
+    const fy02Y = scales.y.getPixelForValue(9.1);
+    ctx.fillStyle = "#9ca3af";
+    ctx.font = "11px Georgia, serif";
+    ctx.textAlign = "left";
+    ctx.fillText("$9.1M", fy02X + 6, fy02Y - 10);
+
+    ctx.restore();
+  }
+};
+
+const ctx = document.getElementById("insuranceChart").getContext("2d");
+new Chart(ctx, {
+  type: "line",
+  data: {
+    labels,
+    datasets: [{
+      label: "Spending ($M)",
+      data: spending,
+      borderColor: "#c0392b",
+      backgroundColor: "rgba(192,57,43,0.08)",
+      borderWidth: 2.5,
+      fill: true,
+      tension: 0.25,
+      pointRadius: function(context) {
+        const i = context.dataIndex;
+        if (i === 0 || i === 4 || i === 5 || i === 8 || i === 23 || i === 25) return 5;
+        return 2.5;
+      },
+      pointBackgroundColor: function(context) {
+        if (context.dataIndex === 5) return "#FFFFFF";
+        return "#c0392b";
+      },
+      pointBorderColor: function(context) {
+        if (context.dataIndex === 5) return "#27785a";
+        return "#FDF9F4";
+      },
+      pointBorderWidth: function(context) {
+        if (context.dataIndex === 5) return 2.5;
+        return 1.5;
+      },
+      pointHoverRadius: 7,
+    }]
+  },
+  options: {
+    responsive: true,
+    maintainAspectRatio: false,
+    scales: {
+      y: {
+        beginAtZero: true,
+        max: 20,
+        ticks: {
+          callback: v => `$${v}M`,
+          font: { family: "Georgia, serif", size: 12 },
+          color: "#9ca3af",
+          stepSize: 5,
+        },
+        grid: { color: "#e5e7eb", drawBorder: false },
+        border: { color: "#1a1a2e" },
+      },
+      x: {
+        ticks: {
+          font: { family: "Georgia, serif", size: 11 },
+          color: "#9ca3af",
+          maxRotation: 45,
+          autoSkip: true,
+          maxTicksLimit: 14,
+        },
+        grid: { display: false },
+        border: { color: "#1a1a2e" },
+      }
+    },
+    plugins: {
+      legend: { display: false },
+      tooltip: {
+        titleFont: { family: "Georgia, serif", size: 14, weight: "bold" },
+        bodyFont: { family: "Georgia, serif", size: 13 },
+        backgroundColor: "#FDF9F4",
+        titleColor: "#1a1a2e",
+        bodyColor: "#4A4A4A",
+        borderColor: "#D0CCC5",
+        borderWidth: 1,
+        displayColors: false,
+        callbacks: {
+          label: (ctx) => `Spending: $${ctx.parsed.y.toFixed(1)}M`,
+          afterLabel: (ctx) => `Share of general fund: ~${share[ctx.dataIndex]}%`
+        }
+      }
+    },
+    interaction: {
+      mode: "index",
+      intersect: false,
+    },
+  },
+  plugins: [bgPlugin, eraPlugin, annotationPlugin],
+});
+
+  })();
+  </script>
+
+  <script>
+  /* Budget breakdown chart */
+  (function() {
+  
+const segments = [
+  { name: "Schools", value: 47.62, color: "#1E1F21", detail: "$47.62M &middot; 43% of general fund; ~63% of functional spending once shared benefits are allocated" },
+  { name: "Health insurance", value: 15.83, color: "#C2261D", detail: "$15.83M &middot; 11.17% GIC rate hike for active employees; 5.1% for retirees" },
+  { name: "Pension", value: 8.2, color: "#B85C1F", detail: "~$8.2M &middot; Rising 8.6% annually; will not level off until 2036" },
+  { name: "Debt service", value: 11.1, color: "#6B7280", detail: "$11.1M &middot; Includes school construction bonds" },
+  { name: "Town departments", value: 21.92, color: "#375E97", detail: "~$21.9M &middot; Town-side operating (police, fire, DPW, library, etc.) after cuts" },
+  { name: "Curbside collection", value: 2.19, color: "#3D7A47", detail: "$2.19M &middot; New line item; Republic Services contract" },
+  { name: "Other general fund", value: 2.92, color: "#7B5EA7", detail: "~$2.9M &middot; Remaining general fund items" },
+  { name: "Sewer enterprise", value: 4.8, color: "#2A7A6B", detail: "$4.8M enterprise fund" },
+  { name: "Water enterprise", value: 6.87, color: "#2E6E9E", detail: "$6.87M enterprise fund" },
+  { name: "Harbor enterprise", value: 1.32, color: "#5A6577", detail: "$1.32M enterprise fund" },
+];
+const total = segments.reduce((s, d) => s + d.value, 0);
+
+const ctx = document.getElementById("budgetChart").getContext("2d");
+const chart = new Chart(ctx, {
+  type: "doughnut",
+  data: {
+    labels: segments.map(s => s.name),
+    datasets: [{
+      data: segments.map(s => s.value),
+      backgroundColor: segments.map(s => s.color),
+      borderColor: "#FDF9F4",
+      borderWidth: 2,
+      hoverOffset: 8,
+    }]
+  },
+  options: {
+    responsive: true,
+    maintainAspectRatio: false,
+    cutout: "50%",
+    plugins: {
+      legend: { display: false },
+      tooltip: {
+        titleFont: { family: "Georgia, serif", size: 14, weight: "bold" },
+        bodyFont: { family: "Georgia, serif", size: 13 },
+        backgroundColor: "#FDF9F4",
+        titleColor: "#1E1F21",
+        bodyColor: "#4A4A4A",
+        borderColor: "#D0CCC5",
+        borderWidth: 1,
+        callbacks: {
+          label: (ctx) => {
+            const seg = segments[ctx.dataIndex];
+            return ` $${seg.value.toFixed(2)}M (${(seg.value / total * 100).toFixed(1)}%)`;
+          }
+        }
+      }
+    },
+    onHover: (evt, elements) => {
+      if (elements.length) showDetail(elements[0].index);
+    }
+  }
+});
+
+const legendEl = document.getElementById("legend");
+const detailEl = document.getElementById("detail");
+
+segments.forEach((seg, i) => {
+  const item = document.createElement("div");
+  item.className = "legend-item";
+  item.innerHTML = `<span class="swatch" style="background:${seg.color}"></span><span class="legend-label"><strong>${seg.name}</strong> <span class="pct">$${seg.value.toFixed(seg.value % 1 === 0 ? 1 : 2)}M (${(seg.value / total * 100).toFixed(1)}%)</span></span>`;
+  item.addEventListener("mouseenter", () => showDetail(i));
+  legendEl.appendChild(item);
+});
+
+function showDetail(i) {
+  detailEl.style.borderLeftColor = segments[i].color;
+  detailEl.textContent = segments[i].detail;
+}
+
+  })();
+  </script>
+
+  <script>
+  /* Voting record chart */
+  (function() {
+  
+const ctx = document.getElementById("overrideChart").getContext("2d");
+new Chart(ctx, {
+  type: "bar",
+  data: {
+    labels: ["Debt exclusions", "Operating overrides", "Capital exclusions"],
+    datasets: [
+      { label: "Passed", data: [68, 3, 5], backgroundColor: "#3D7A47", borderRadius: 2 },
+      { label: "Failed", data: [16, 18, 5], backgroundColor: "#C2261D", borderRadius: 2 }
+    ]
+  },
+  options: {
+    indexAxis: "y",
+    responsive: true,
+    maintainAspectRatio: false,
+    scales: {
+      x: {
+        stacked: true,
+        max: 90,
+        ticks: { font: { family: "Georgia, serif", size: 13 }, color: "#4A4A4A" },
+        grid: { color: "#DDD8D0" },
+      },
+      y: {
+        stacked: true,
+        ticks: { font: { family: "Georgia, serif", size: 15, weight: "bold" }, color: "#1E1F21" },
+        grid: { display: false },
+      }
+    },
+    plugins: {
+      legend: { display: false },
+      tooltip: {
+        titleFont: { family: "Georgia, serif", size: 14, weight: "bold" },
+        bodyFont: { family: "Georgia, serif", size: 13 },
+        backgroundColor: "#FDF9F4",
+        titleColor: "#1E1F21",
+        bodyColor: "#4A4A4A",
+        borderColor: "#D0CCC5",
+        borderWidth: 1,
+        callbacks: {
+          afterBody: (ctx) => {

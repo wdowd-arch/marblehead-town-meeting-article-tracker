@@ -1,0 +1,26 @@
+Source: https://www.marbleheadindependent.com/news-analysis-marbleheads-override-questions-will-test-two-theories-of-how-voters-say-yes/
+Published: April 7, 2026 (News analysis)
+
+Why this matters to Article 29
+- The analysis is explicitly about the structure of the override questions that would go to a June ballot (if Town Meeting authorizes them first) and contrasts:
+  1) a bundled, multi-tier operating/service override framework, and
+  2) a single, standalone question tied to a single expense (trash funding).
+
+Key facts pulled from the piece
+- Select Board votes described: 4–1 (March 25) to pursue a three-tier operating override; unanimous to place a separate trash-funding question alongside it.
+- Budget gap framing: ~$7.7M total shortfall.
+- Trash funding framing: ~$2.2M (about 29% of the shortfall), described as tied to a curbside trash fee of about ~$262 per household; the ballot question would fund the service through the levy instead (replacing the fee).
+- Remaining override size framed: ~$5.5M to be addressed by the tiered “service override.”
+- Tier descriptions:
+  - Tier 1 “restore”: bring back services cut from balanced budget (examples listed include firefighter position, school resource officer, full library staffing, custodians, and other positions).
+  - Tier 2 “stabilize and build”: add building maintenance, additional staffing (public safety/public works), implement salary study recommendations.
+  - Tier 3 “invest and improve”: add capital investments.
+- Mechanics described: voters mark each tier yes/no; the highest tier clearing a majority sets the permanent levy increase (tiers are cumulative).
+
+Ballot-history context cited in the piece
+- Since 1982: 68/84 debt exclusions approved (81%); 3/21 operating overrides approved (86% failure rate).
+- Last permanent general operating increase cited as June 15, 2005.
+
+How to use this in Article 29 writeups
+- Use as explainer language for why Article 29 exists, how the override is being structured/messaged, and how the standalone trash question is intended to affect voter behavior.
+

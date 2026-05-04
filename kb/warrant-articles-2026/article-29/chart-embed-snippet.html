@@ -1,0 +1,12 @@
+<!-- Article 29 chart embed (Chart.js) -->
+<!-- Requires Chart.js on the page -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<div style="height:400px; max-width:900px;">
+  <canvas id="overrideChart"></canvas>
+</div>
+<script type="module">
+  import { renderOverrideChart } from "./overrideChart.js";
+  renderOverrideChart(document.getElementById("overrideChart"));
+</script>
+

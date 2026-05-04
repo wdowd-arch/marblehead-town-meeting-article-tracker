@@ -1,0 +1,20 @@
+<!-- Article 23 chart embeds (Chart.js) -->
+<!-- Requires Chart.js on the page -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<div style="height:400px; max-width:900px;">
+  <canvas id="insuranceChart"></canvas>
+</div>
+<script type="module">
+  import { renderInsuranceChart } from "./insuranceChart.js";
+  renderInsuranceChart(document.getElementById("insuranceChart"));
+</script>
+
+<div style="height:360px; max-width:760px; margin-top:24px;">
+  <canvas id="budgetChart"></canvas>
+</div>
+<script type="module">
+  import { renderBudgetChart } from "./budgetChart.js";
+  renderBudgetChart({ canvas: document.getElementById("budgetChart") });
+</script>
+
