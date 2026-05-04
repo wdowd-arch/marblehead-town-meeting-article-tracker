@@ -532,6 +532,9 @@
   .live-entry .live-body {
     font-size: 18px; color: var(--text-secondary); line-height: 1.7;
   }
+  .live-entry figure { margin: 12px 0; }
+  .live-entry figure img { width: 100%; height: auto; display: block; border: 1px solid var(--border); border-radius: 4px; }
+  .live-entry figcaption { font-size: 13px; color: var(--text-muted); margin-top: 6px; font-style: italic; line-height: 1.5; }
   .live-empty {
     font-style: italic; color: var(--text-muted); font-size: 16px;
     padding: 8px 0;
@@ -589,7 +592,11 @@
     <a href="#articleTracker" class="live-jump">Jump to article tracker &darr;</a>
   </div>
   <div class="live-feed" id="liveFeed">
-    <div class="live-empty">Live updates will appear here once gavel-in. Refresh this page for the latest.</div>
+    <div class="live-entry">
+      <div class="live-time">6:37 p.m.</div>
+      <div class="live-headline">Good evening, Marblehead</div>
+      <div class="live-body">We're up in the press balcony at the Marblehead High School Field House &mdash; left side as you face the main stage &mdash; for the 2026 Annual Town Meeting. The room is filling in steadily, with neighbors drifting in and finding seats among rows of red folding chairs.<figure><img src="assets/fieldhouse-pre-gavel.jpg" alt="View from the press balcony of the Marblehead High School Field House as residents fill the floor before the 2026 Annual Town Meeting." /><figcaption>The Field House fills ahead of gavel-in. Will Dowd / The Marblehead Independent</figcaption></figure>If you can't be in the room, Marblehead Community Access and Media is streaming the proceedings. The YouTube stream goes live at 6:45 p.m. &mdash; <a href="https://youtube.com/live/BxprIxbmCxM?feature=share" target="_blank" rel="noopener">watch on MHTV</a>. You can also tune in on Comcast 8 (HD 1073) or Verizon 28 (HD 2128).<br><br>Stay with us here for live updates from gavel to adjournment. Forty articles tonight, including the 3A multifamily overlay, the FY27 operating budget and the tiered Proposition 2&frac12; override package. Quorum is 300. Gavel falls at 7.</div>
+    </div>
   </div>
 </div>
 
